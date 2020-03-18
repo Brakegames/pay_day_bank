@@ -29,6 +29,10 @@ class APIManager: NSObject {
     public func getAccounts(handler:@escaping (Any?)->()) {
         getRequest(methodUrl: "accounts", httpMethod: "GET", jsonBody: nil, handler: handler)
     }
+    
+    public func getTransaction(handler:@escaping (Any?)->()) {
+        getRequest(methodUrl: "transactions", httpMethod: "GET", jsonBody: nil, handler: handler)
+    }
 
         
     private func getRequest(methodUrl: String, httpMethod: String = "GET", jsonBody: [String:Any]? = nil, handler:@escaping (Any?)->()) {

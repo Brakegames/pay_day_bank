@@ -54,5 +54,16 @@ class AccountsController: UIViewController, UITableViewDelegate, UITableViewData
         cell.accountNumber.text = info["iban"] as? String
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        let info = tableData[indexPath.row]
+        let controller = self.storyboard?.instantiateViewController(identifier: "accountShowView") as! AccountShowController
+        controller.accountId = info["id"] as! Int
+        controller.accountNumber = info["iban"] as! String
+        controller.accountType = info["type"] as! String
+        controller.creationDate = info["date_created"] as! String
+        self.present(controller, animated: true)
+    }
 
 }
