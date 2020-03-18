@@ -17,6 +17,8 @@
 		84754B1524220973007DFB80 /* AuthorizeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84754B1424220973007DFB80 /* AuthorizeController.swift */; };
 		84754B172422173E007DFB80 /* AuthRegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84754B162422173E007DFB80 /* AuthRegisterController.swift */; };
 		84754B1B24222336007DFB80 /* WelcomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84754B1A24222336007DFB80 /* WelcomeController.swift */; };
+		84754B1D242259A1007DFB80 /* AccountsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84754B1C242259A1007DFB80 /* AccountsController.swift */; };
+		84754B2024225BE0007DFB80 /* AccountCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84754B1F24225BE0007DFB80 /* AccountCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		84754B1424220973007DFB80 /* AuthorizeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AuthorizeController.swift; path = "../New Group/AuthorizeController.swift"; sourceTree = "<group>"; };
 		84754B162422173E007DFB80 /* AuthRegisterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AuthRegisterController.swift; path = "../New Group/AuthRegisterController.swift"; sourceTree = "<group>"; };
 		84754B1A24222336007DFB80 /* WelcomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeController.swift; sourceTree = "<group>"; };
+		84754B1C242259A1007DFB80 /* AccountsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsController.swift; sourceTree = "<group>"; };
+		84754B1F24225BE0007DFB80 /* AccountCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +73,7 @@
 				84754B00242207CE007DFB80 /* SceneDelegate.swift */,
 				84754B02242207CE007DFB80 /* ViewController.swift */,
 				84754B1924222312007DFB80 /* AuthRegister */,
+				84754B1E24225BCA007DFB80 /* Accounts */,
 				84754B04242207CE007DFB80 /* Main.storyboard */,
 				84754B07242207CF007DFB80 /* Assets.xcassets */,
 				84754B09242207CF007DFB80 /* LaunchScreen.storyboard */,
@@ -85,6 +90,15 @@
 				84754B1A24222336007DFB80 /* WelcomeController.swift */,
 			);
 			path = AuthRegister;
+			sourceTree = "<group>";
+		};
+		84754B1E24225BCA007DFB80 /* Accounts */ = {
+			isa = PBXGroup;
+			children = (
+				84754B1C242259A1007DFB80 /* AccountsController.swift */,
+				84754B1F24225BE0007DFB80 /* AccountCell.swift */,
+			);
+			path = Accounts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,11 +174,13 @@
 			files = (
 				84754B13242207F1007DFB80 /* APIManager.swift in Sources */,
 				84754B1B24222336007DFB80 /* WelcomeController.swift in Sources */,
+				84754B2024225BE0007DFB80 /* AccountCell.swift in Sources */,
 				84754B03242207CE007DFB80 /* ViewController.swift in Sources */,
 				84754AFF242207CE007DFB80 /* AppDelegate.swift in Sources */,
 				84754B1524220973007DFB80 /* AuthorizeController.swift in Sources */,
 				84754B172422173E007DFB80 /* AuthRegisterController.swift in Sources */,
 				84754B01242207CE007DFB80 /* SceneDelegate.swift in Sources */,
+				84754B1D242259A1007DFB80 /* AccountsController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

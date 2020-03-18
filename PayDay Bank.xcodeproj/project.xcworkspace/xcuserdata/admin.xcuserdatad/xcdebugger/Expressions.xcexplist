@@ -6,12 +6,23 @@
          contextName = "closure #1 in APIManager.getRequest(methodUrl:httpMethod:jsonBody:handler:):APIManager.swift">
          <PersistentStrings>
             <PersistentString
-               value = "String(data: data, encoding: .utf8)">
-            </PersistentString>
-            <PersistentString
                value = "error?.localizedDescription">
             </PersistentString>
+            <PersistentString
+               value = "String(data: data, encoding: .utf8)">
+            </PersistentString>
          </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "AccountsController.viewDidLoad():AccountsController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.customerId">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in AccountsController.onAccountsLoad(data:):AccountsController.swift">
       </ContextState>
    </ContextStates>
 </VariablesViewState>

@@ -107,7 +107,7 @@
                                     <action selector="onLoginButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="cSj-hA-znd"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2vb-Mv-hMb">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="springs" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2vb-Mv-hMb">
                                 <rect key="frame" x="22" y="216" width="370" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="oN6-b5-Co5"/>
@@ -124,7 +124,7 @@
                                 <color key="textColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r0H-Q0-jTp">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Nadiah.Spoel@example.com" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r0H-Q0-jTp">
                                 <rect key="frame" x="22" y="126" width="370" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="vVb-4X-G11"/>
@@ -203,6 +203,82 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C9d-ga-f5q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="849" y="139"/>
+        </scene>
+        <!--Accounts Controller-->
+        <scene sceneID="0FQ-Z2-dwd">
+            <objects>
+                <viewController storyboardIdentifier="accountsView" modalPresentationStyle="fullScreen" id="KcE-yO-cVX" customClass="AccountsController" customModule="PayDay_Bank" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AoV-5T-MhB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Flc-XK-YqO">
+                                <rect key="frame" x="0.0" y="88" width="414" height="1"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="PyY-ZM-71Y"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Accounts" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fia-Ek-oVj">
+                                <rect key="frame" x="171" y="56" width="72" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="XrM-Ok-V7P">
+                                <rect key="frame" x="0.0" y="89" width="414" height="773"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="accountCell" id="9At-ah-xQI" customClass="AccountCell" customModule="PayDay_Bank" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9At-ah-xQI" id="fRX-z2-cAB">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N2i-9t-Mvl">
+                                                    <rect key="frame" x="20" y="11" width="374" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="N2i-9t-Mvl" firstAttribute="top" secondItem="fRX-z2-cAB" secondAttribute="topMargin" id="3PG-hk-KyD"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="N2i-9t-Mvl" secondAttribute="trailing" id="5Ug-vH-yu2"/>
+                                                <constraint firstItem="N2i-9t-Mvl" firstAttribute="bottom" secondItem="fRX-z2-cAB" secondAttribute="bottomMargin" id="KMy-7e-jU1"/>
+                                                <constraint firstItem="N2i-9t-Mvl" firstAttribute="centerY" secondItem="fRX-z2-cAB" secondAttribute="centerY" id="bPp-lB-yi0"/>
+                                                <constraint firstItem="N2i-9t-Mvl" firstAttribute="leading" secondItem="fRX-z2-cAB" secondAttribute="leadingMargin" id="iZ3-4O-ypO"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="accountNumber" destination="N2i-9t-Mvl" id="Ruc-vs-f0S"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Flc-XK-YqO" firstAttribute="top" secondItem="VwH-2O-HCn" secondAttribute="top" constant="44" id="2U2-aX-jyx"/>
+                            <constraint firstItem="Fia-Ek-oVj" firstAttribute="centerX" secondItem="AoV-5T-MhB" secondAttribute="centerX" id="53z-Uw-2Vh"/>
+                            <constraint firstItem="VwH-2O-HCn" firstAttribute="trailing" secondItem="XrM-Ok-V7P" secondAttribute="trailing" id="725-6i-3w4"/>
+                            <constraint firstItem="VwH-2O-HCn" firstAttribute="trailing" secondItem="Flc-XK-YqO" secondAttribute="trailing" id="EyN-0G-f9b"/>
+                            <constraint firstItem="VwH-2O-HCn" firstAttribute="bottom" secondItem="XrM-Ok-V7P" secondAttribute="bottom" id="M5j-1L-gHj"/>
+                            <constraint firstItem="Fia-Ek-oVj" firstAttribute="top" secondItem="VwH-2O-HCn" secondAttribute="top" constant="12" id="NMI-59-yMp"/>
+                            <constraint firstItem="XrM-Ok-V7P" firstAttribute="top" secondItem="Flc-XK-YqO" secondAttribute="bottom" id="Znv-dP-6zT"/>
+                            <constraint firstItem="Flc-XK-YqO" firstAttribute="leading" secondItem="VwH-2O-HCn" secondAttribute="leading" id="ims-Xc-V5q"/>
+                            <constraint firstItem="XrM-Ok-V7P" firstAttribute="leading" secondItem="VwH-2O-HCn" secondAttribute="leading" id="ofi-gs-vB9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="VwH-2O-HCn"/>
+                    </view>
+                    <connections>
+                        <outlet property="accountsTable" destination="XrM-Ok-V7P" id="8I0-hn-qwY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PJo-fZ-ZaB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1558" y="139"/>
         </scene>
     </scenes>
     <resources>

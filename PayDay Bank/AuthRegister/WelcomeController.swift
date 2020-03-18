@@ -14,11 +14,18 @@ class WelcomeController: UIViewController {
     
     var firstName = ""
     var lastName = ""
+    var customerId = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         welcomeLabel.text = "Welcome, \(firstName) \(lastName)!"
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+            let controller = self.storyboard?.instantiateViewController(identifier: "accountsView") as! AccountsController
+            controller.customerId = self.customerId
+            self.present(controller, animated: true)
+        }
     }
 
 }

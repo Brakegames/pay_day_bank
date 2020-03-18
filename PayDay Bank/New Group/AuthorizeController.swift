@@ -53,9 +53,11 @@ class AuthorizeController: UIViewController {
                 }
                 let firstName = data["First Name"] as? String
                 let lastName = data["Last Name"] as? String
+                let customerId = data["id"] as? Int
                 let controller = self.storyboard?.instantiateViewController(identifier: "welcomeView") as! WelcomeController
                 controller.firstName = firstName!
                 controller.lastName = lastName!
+                controller.customerId = customerId!
                 self.present(controller, animated: true)
             } else {
                 let alert = UIAlertController(title: "Error", message: "Something goes wrong", preferredStyle: UIAlertController.Style.alert)
